@@ -4,7 +4,7 @@
 
  @font-face {
   font-family: 'MinionPro', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  src: url(/font/MinionPro-Regular.otf);
+  src: url("../font/MinionPro-Regular.otf");
 }
 
 /* Custom default button */
@@ -99,7 +99,7 @@ a{
 .cover-container {
   width: 100%;
   height:100%;
-  background-image: url("/img/main-bg.jpeg");
+  background-image: url("../img/main-bg.jpeg");
   background-size: cover;
   background-position: center center;
   background-repeat: repeat-y;
@@ -136,6 +136,11 @@ main{
 .nav-pills .nav-link.active img{
   border: 2.5px solid #fff
 }
+
+.nav-pills .nav-link.active{
+  background-color: transparent !important;
+}
+
 .tab-content{
   margin-left: 2.5rem;
 }
@@ -187,13 +192,8 @@ main{
 }
 
 
-/**Media Page**/
-.media{
-    width: 100%;
-    height:100%;
-    margin: 0;
-    padding: 0;
-}
+/*About Page**/
+
 .col-lg-6{ 
   padding: 0;
   margin:0;
@@ -211,17 +211,19 @@ main{
   height: 100vh;
 }
 #media-text p{
-  max-width: 500px;
+  max-width: 600px;
   line-height: 2;
   margin-top: 2rem;
 }
 .fish{
   width: 100%;
-  max-width: 300px;
+  max-width: 200px;
 }
 @media (max-width: 1280px) {
   #media-bg img {
     height:100%;}
+  #media-text p{
+    padding-right: 0; }
 } 
 @media (max-width: 991px) {
  #media-text p{
