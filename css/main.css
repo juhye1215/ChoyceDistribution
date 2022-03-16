@@ -1,0 +1,273 @@
+/*
+ * Globals
+ */
+
+ @font-face {
+  font-family: 'MinionPro', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  src: url(/font/MinionPro-Regular.otf);
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+
+/*Base structure*/
+
+body {
+  font-family: 'MinionPro'
+}
+a{
+  cursor: pointer;
+}
+
+
+/*nav*/
+
+.navbar-expand-lg{
+  width: 100%;
+  padding: 0.5rem 5rem;
+}
+@media (max-width: 575px) {
+  .navbar-expand-lg{
+  padding: 0.25rem 2rem;
+  }
+  .addr{
+  display: none;
+  }
+  .navbar-expand-lg .nav-item{
+    padding: 0.75rem 0;
+  }
+}
+
+#navbarNav .nav-link {
+  padding: .25rem 0;
+  font-family: 'MinionPro';
+  background-color: transparent;
+  color: red !important;
+}
+#navbarNav .nav-item:hover .nav-link{
+ border-bottom: 1.5px solid red;
+}
+@media (max-width: 991px) {
+  #navbarNav .nav-item:hover .nav-link{
+    border-bottom: none;}
+}
+.navbar-brand img{
+  width: 10rem;
+  float: left;
+ }
+
+.nav-item {
+  text-align: center;
+  padding: 0 3rem;
+}
+.addr{
+  float: left;
+  margin-top: 15px;
+  margin-left:10px;
+  max-width: 10rem;
+  line-height: 1;
+  vertical-align:middle;
+  color: #696564;
+  font-size: 0.75rem;
+}
+.facebook{
+  width: 20px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+.nav-item{
+  width: 100%;
+}
+}
+
+.active {
+  border-bottom-width: 3px;
+  border-bottom-color: black;
+}
+
+
+
+/**main**/
+.cover-container {
+  width: 100%;
+  height:100%;
+  background-image: url("/img/main-bg.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: repeat-y;
+}
+main{
+  padding:5rem 2.5rem ;
+}
+
+.nav-pills button img{
+  width: 100%;
+  max-width: 400px;
+  filter: brightness(100%);
+}
+#v-pills-tab button{
+  padding-left:0;
+  margin-left:0;
+}
+
+@media (max-width: 1280px) {
+  .nav-pills button img{
+    max-width: 300px;
+    }
+}
+
+@media (max-width: 575px) {
+  main{
+     padding: 0;
+  }
+
+  #v-pills-tab, #v-pills-tabContent{
+    display: none;
+  }
+}
+.nav-pills .nav-link.active img{
+  border: 2.5px solid #fff
+}
+.tab-content{
+  margin-left: 2.5rem;
+}
+.tab-pane{
+  width: 100%;
+  height: 80vh;
+  padding: 5%;
+  margin: 0;
+}
+.tab-pane p{
+  margin-top: 1.5rem;
+  font-size: 1rem;
+}
+@media (max-width: 991px) {
+  .tab-content{
+    margin-left:1rem; }
+  .tab-pane{
+    height: 50vh;}
+}
+
+.btn-print{
+  border:none;
+  border-radius: 50%;
+}
+.btn-print:hover{
+  background-color: rgb(90, 90, 90);
+}
+
+
+/**mobile modal***/
+#mobile-list img{
+  width: 100%;
+}
+#mobile-list button{
+  border: none;
+} 
+.modal{
+  padding: 0 0.75rem;
+}
+.modal-content{
+  padding: 1.5rem 1rem;
+} 
+.modal-body{
+  font-size: 1rem;
+}
+@media (max-width: 575px) {
+  .cover-container {
+    background: #fff;}
+}
+
+
+/**Media Page**/
+.media{
+    width: 100%;
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+.col-lg-6{ 
+  padding: 0;
+  margin:0;
+  }
+
+#media-bg img{
+  width: 100%;
+  height: 100vh;
+}
+#media-text{
+  background-color: #696564;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 4rem 3.5rem ;
+  height: 100vh;
+}
+#media-text p{
+  max-width: 500px;
+  line-height: 2;
+  margin-top: 2rem;
+}
+.fish{
+  width: 100%;
+  max-width: 300px;
+}
+@media (max-width: 1280px) {
+  #media-bg img {
+    height:100%;}
+} 
+@media (max-width: 991px) {
+ #media-text p{
+  max-width: none;
+  padding: 1rem 0.5rem;
+ }
+ #media-text{
+  height: auto;
+  text-align: center;
+}
+}
+
+
+/**Contact Us**/
+.col-lg-4,.col-lg-8{
+  padding: 0;
+  margin:0;
+}
+.col-lg-8{
+  background-color: #696564;
+}
+#map iframe{
+  width: 100%;
+  height: 100vh;
+  border: none;
+}
+
+#contact-text{
+  max-width: 600px;
+  color: #fff;
+  font-size: 1.25rem;
+  padding:15% 10% ;
+  height: 100vh;
+  text-align: center;
+}
+#contact-text p{
+  margin-top: 2.5rem;
+}
+#contact-text a {
+color: #fff;
+}
+@media (max-width: 991px) {
+  #map iframe{
+    height: 50vh;}
+    
+  #contact-text{
+    height: auto;
+    max-width: none;}
+}
