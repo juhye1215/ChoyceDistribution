@@ -12,14 +12,14 @@
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+  text-shadow: none; 
 }
 
 
 /*Base structure*/
 
 body {
-  font-family: 'MinionPro'
+  font-family: 'MinionPro', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 a{
   cursor: pointer;
