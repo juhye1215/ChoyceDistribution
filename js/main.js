@@ -1,7 +1,7 @@
 /**background image changes */
 let bg = document.getElementById("bgChange");
 function bgChange1() {
-    bg.style.backgroundImage = "url(/img/meat.jpeg)";
+    bg.style.backgroundImage = "url(./img/meat.jpeg)";
     bg.style.backgroundSize ="cover";
     bg.style.height ="100%";
     document.getElementById("tabimg1").style.filter = "brightness(100%)";
@@ -10,7 +10,7 @@ function bgChange1() {
     document.getElementById("tabimg4").style.filter = "brightness(50%)";
  }
  function bgChange2() {
-    bg.style.backgroundImage = "url(/img/salmon.jpeg)";
+    bg.style.backgroundImage = "url(./img/salmon.jpeg)";
     bg.style.backgroundSize ="cover";
     bg.style.height ="100%";
     document.getElementById("tabimg1").style.filter = "brightness(50%)";
