@@ -19,7 +19,7 @@
 /*Base structure*/
 
 body {
-  font-family: 'MinionPro'
+  font-family: 'MinionPro', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 a{
   cursor: pointer;
