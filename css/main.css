@@ -46,7 +46,7 @@ a{
 
 #navbarNav .nav-link {
   padding: .25rem 0;
-  font-family: 'MinionPro';
+  font-family: 'MinionPro', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background-color: transparent;
   color: red !important;
 }
@@ -107,7 +107,10 @@ a{
 main{
   padding:5rem 2.5rem ;
 }
-
+.nav-pills button{
+  border: transparent !important;
+  background: transparent !important;
+}
 .nav-pills button img{
   width: 100%;
   max-width: 400px;
