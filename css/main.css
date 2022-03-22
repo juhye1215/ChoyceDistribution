@@ -30,7 +30,7 @@ a{
 
 .navbar-expand-lg{
   width: 100%;
-  padding: 0.5rem 5rem;
+  padding: 0.5rem 2.5rem;
 }
 @media (max-width: 575px) {
   .navbar-expand-lg{
@@ -77,9 +77,22 @@ a{
   font-size: 0.75rem;
 }
 .facebook{
-  width: 20px;
+  width: 25px;
   margin-top: 5px;
   cursor: pointer;
+}
+.facebook-mobile{
+  display: none;
+}
+.facebook-mobile svg{
+  padding-top:25px;
+  margin-left:10px;
+}
+
+@media (max-width: 575px) {
+  .facebook-mobile{
+    display: block;
+  }
 }
 
 @media (max-width: 992px) {
@@ -197,7 +210,7 @@ main{
 
 /*About Page**/
 
-.col-lg-6{ 
+.col-lg-5,.col-lg-7{ 
   padding: 0;
   margin:0;
   }
@@ -241,11 +254,8 @@ main{
 
 
 /**Contact Us**/
-.col-lg-4,.col-lg-8{
-  padding: 0;
-  margin:0;
-}
-.col-lg-8{
+
+.col-lg-7{
   background-color: #696564;
 }
 #map iframe{
@@ -270,7 +280,7 @@ color: #fff;
 }
 @media (max-width: 991px) {
   #map iframe{
-    height: 50vh;}
+    height: 90vh;}
     
   #contact-text{
     height: auto;
